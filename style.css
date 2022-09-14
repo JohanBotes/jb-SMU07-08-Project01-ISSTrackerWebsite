@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html { 
+    background: url(https://wallpapercave.com/wp/wp9116447.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.jumbotron {
+margin-top: 600px;
+background-color: rgb(82, 82, 82);
+border-radius: 5px;
+font-family: helvetica;
+color: rgb(255, 255, 255);
+padding-bottom: 100px;
+}
+
+.display-4 {
+text-align: center;
+
+}
+
+
+
+
+
+
