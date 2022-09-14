@@ -1,8 +1,20 @@
-fetch("https://api.wheretheiss.at/v1/satellites/25544").then(function (response) {
-    console.log(response)
-    return response.json()
 
-}).then(data => console.log(data))
+
+// fetch("https://api.wheretheiss.at/v1/satellites/25544").then(function (response) {
+//     //console.log(response)
+//     return response.json()
+
+// })
+// //.then(data => console.log(data))
+// .then(function (ISSdata) {
+// 	console.log(ISSdata);
+// 	console.log(ISSdata.latitude);
+// 	console.log(ISSdata.longitude);
+// 	console.log(ISSdata.altitude);
+// 	console.log(ISSdata.velocity);
+// 	console.log(ISSdata.visibility);
+
+// })
 
 const options = {
 	method: 'GET',
@@ -11,21 +23,63 @@ const options = {
 		'X-RapidAPI-Host': 'forward-reverse-geocoding.p.rapidapi.com'
 	}
 };
-
-fetch('https://forward-reverse-geocoding.p.rapidapi.com/v1/reverse?lat=51.731511404602&lon=99.944774364005&accept-language=en&polygon_threshold=0.0', options)
+let lat = 41.881832
+let long = -87.623177
+fetch(`https://forward-reverse-geocoding.p.rapidapi.com/v1/reverse?lat=${lat}&lon=${long}&accept-language=en&polygon_threshold=0.0`, options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
 
 
+// let lat = 
+// let long = 
 
-let factsArray = ["It flies around the world every 90 minutes, travelling at 5 miles per second",
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'fcb80315dbmshe770d01928a9b4bp12fa3ejsncb17a3d5b4e3',
+// 		'X-RapidAPI-Host': 'forward-reverse-geocoding.p.rapidapi.com'
+// 	}
+// };
+
+// fetch('https://forward-reverse-geocoding.p.rapidapi.com/v1/reverse?lat=32.779167&lon-96.808891=&accept-language=en&polygon_threshold=0.0', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
+
+
+
+let facts = ["It flies around the world every 90 minutes, travelling at 5 miles per second",
 "In the space of just 24 hours, the space station makes 16 orbits of Earth, travelling through 16 sunrises and sunsets",
 "It's 357ft long from end to end - that's about the same as a football pitch",
-"After the moon, the ISS is the second brightest object in our night sky - you don't even need a telescope to see it zoom over your house"];
+"After the moon, the ISS is the second brightest object in our night sky - you don't even need a telescope to see it zoom over your house",
+"There are two bathrooms on board! There's also one gym, six sleeping quarters and a 360 degree bay window",
+"Six spaceships can dock to the station at any one time",
+"Astronauts have to work out for two hours a day while on board to help keep their muscles in shape while in space",
+"More than 50 computers control all the systems on the station",
+"The electrics on the ISS are all connected with eight miles of cabling",
+"230 individuals from 18 countries have visited the International Space Station",
+"205 spacewalks have been carried out since December 1998",
+"The ISS weighs about 420,000kg - that's about the same as 320 cars",
+"It flies through space about 250 miles from the Earth - a craft can get there from Earth in about six hours",
+"The astronaut Peggy Whitson set the record for spending the most total length of time living and working in space at 665 days on 2 September 2017",
+];
 
-    // https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/
-    // https://wheretheiss.at/w/developer
+let factsButton = document.getElementById("factsButton")
+factsButton.addEventListener("click",factsArray)
+
+function factsArray(){
+let Num = Math.floor((Math.random() * facts.length));
+console.log(facts[Num])
+let showFacts = document.getElementById("factGenerator")
+showFacts.textContent = facts[Num]
+}
+	
+	
+
+
+     https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/
+   // https://wheretheiss.at/w/developer
 
 
 // Get the modal
