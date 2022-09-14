@@ -24,14 +24,32 @@ let factsArray = ["It flies around the world every 90 minutes, travelling at 5 m
 "It's 357ft long from end to end - that's about the same as a football pitch",
 "After the moon, the ISS is the second brightest object in our night sky - you don't even need a telescope to see it zoom over your house"];
 
-
-
-
-
-
-
-
-
-
     // https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/
     // https://wheretheiss.at/w/developer
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
