@@ -1,8 +1,6 @@
 
 
-html { 
- 
-  }
+
 
 .jumbotron {
 margin-top: 150px;
@@ -187,7 +185,11 @@ footer, h3 {
   background-color: #aaaaaa;
 }
 
-#bottomCards {
+#midCards {
 margin-bottom: 150px;
 
+}
+
+#bottomCards {
+margin-bottom: 50px;
 }
