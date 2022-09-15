@@ -16,7 +16,7 @@ text-align: center;
 
 }
 
-
+/* Austin included code in the body section to create a full screen background*/
 body {
     margin-left: 10px;
     margin-right: 10px;
@@ -40,6 +40,7 @@ header  {
   padding-bottom: 5px;
   margin-bottom: 1px;
 }
+
 
 .homelogo {
     flex-direction:row;
@@ -194,6 +195,10 @@ margin-bottom: 150px;
 margin-bottom: 50px;
 }
 
+.officePic {
+    height:50%;
+    width:auto;
+}
 li{
   list-style-type: none;
   font-weight: bold;
