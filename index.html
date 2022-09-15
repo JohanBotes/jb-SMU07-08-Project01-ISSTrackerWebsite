@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISS Tracker</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="./reset.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+=======
+<!-- <link rel="stylesheet" href="./reset.css">  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+
+>>>>>>> 2e4111f077e60f360470be77064f0618c6680492
 </head>
 
 <body>
@@ -40,6 +47,17 @@
 
     </div>
 
+<<<<<<< HEAD
+=======
+<!-- Modal content -->
+<div class="modal-content">
+  <span class="close">&times;</span>
+  <p>Signup to receive regular Fun Facts..!</p>
+</div>
+
+<!--Austin added a class for background to be changed-->
+</div>
+>>>>>>> 2e4111f077e60f360470be77064f0618c6680492
 <div class = "bg"></div>
 <Section>
 <div class="heropic">
@@ -52,7 +70,14 @@
 <div class="jumbotron" id="jumbotron">
 
   <h1 class="display-4">ISS Tracking Data</h1>
-
+  <ul class="justify-content-center">
+    <li id=latitude></li>
+    <li id="longitude"></li>
+    <li id="altitude"></li>
+    <li id="velocity"></li>
+    <li id="visibility"></li>
+  </ul>
+  <a class="btn btn-primary" id="ISSSearchButton">Track ISS</a>
 </div>
 
 
@@ -62,17 +87,22 @@
       Facts About the ISS!
     </div>
     <div class="card-body">
-      <h5 class="card-title text-white">ISS Facts from the array</h5>
-      <a href="#" class="btn btn-primary">Fact Generator</a>
+      <h5 class="card-title text-white"id = "factGenerator"></h5>
+      <a class="btn btn-primary" id="factsButton">Fact Generator</a>
     </div>
   </div>
+<<<<<<< HEAD
   <div class="card col-6 background">
     <div class="card-header text-white background1">
+=======
+  <div class="card col-6 bg-secondary">
+    <div class="card-header text-white">
+>>>>>>> 2e4111f077e60f360470be77064f0618c6680492
       Featured
     </div>
     <div class="card-body">
       <h5 class="card-text text-white">Your amazing ISS photos will go here</h5>
-      <a href="#" class="btn btn-primary">Add your own photos</a>
+      <a href="#" class="btn btn-primary" >Add your own photos</a>
     </div>
   </div>
 </div>
@@ -81,7 +111,11 @@
     <div class="card-header justify-content-evenly text-white background1">
       About Us
     </div>
+<<<<<<< HEAD
     <img src = "./GucciGang3 Team Pic.png" id="apollocrew">
+=======
+  <!--Austin added two cards to the bottom for the "about" and "contact"-->
+>>>>>>> 2e4111f077e60f360470be77064f0618c6680492
     <div class="card-body">
       <h5 class="card-title text-white">We are Austin Moore, Johan Botes, and Fabian Gutierrez. We're space enthusiasts who want to share our excitement for the marvel that is the ISS. We do this by providing its current location and a way to share your awesome ISS photos for everyone to enjoy.  </h5>
     </div>
@@ -91,11 +125,14 @@
       Contact Us
     </div>
     <div class="card-body">
+      <img class= officePic src="./GucciGang3HQ.jpg" width="300" height="auto">
+      <h6 class="card-text text-white">GucciGang3 Headquarters</h6>
       <h5 class="card-text text-white">Email:</h5>
       <h5 class="card-text text-white">GucciGang3@gmail.com</h5>
-      <h5 class="card-text text-white">Mailing Address:
-      <h5 class="card-text text-white">P.O. Box 20, Las Cruces, NM 88004</h5></h5>
-    </div>
+      <h5 class="card-text text-white">Mailing Address:</h5>
+      <h5 class="card-text text-white">P.O. Box 20, Las Cruces, NM 88004</h5>
+      
+       </div>
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

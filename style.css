@@ -12,6 +12,10 @@
 
 }
 
+<<<<<<< HEAD
+=======
+/* Austin included code in the body section to create a full screen background*/
+>>>>>>> 2e4111f077e60f360470be77064f0618c6680492
 body {
   margin-left: 10px;
   margin-right: 10px;
@@ -35,6 +39,7 @@ header  {
   padding-bottom: 5px;
   margin-bottom: 0px;
 }
+
 
 .homelogo {
     flex-direction:row;
@@ -187,6 +192,7 @@ footer, h3 {
 }
 
 #bottomCards {
+<<<<<<< HEAD
   margin-bottom: 50px;
 }
 
@@ -206,3 +212,22 @@ footer, h3 {
   margin-top: 20px;
 }
 
+=======
+margin-bottom: 50px;
+}
+
+.officePic {
+    height:50%;
+    width:auto;
+}
+li{
+  list-style-type: none;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+ul{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+>>>>>>> 2e4111f077e60f360470be77064f0618c6680492
