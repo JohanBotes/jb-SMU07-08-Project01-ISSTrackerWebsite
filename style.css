@@ -1,44 +1,39 @@
-
-
-
-
 .jumbotron {
-margin-top: 150px;
-background-color: rgb(233, 233, 233);
-border-radius: 5px;
-font-family: helvetica;
-color: rgb(0, 0, 0);
-margin-bottom: 150px;
+  margin-top: 120px;
+  background-color:#75868D;
+  border-radius: 5px;
+  font-family: helvetica;
+  color: white;
+  margin-bottom: 120px;
 }
 
 .display-4 {
-text-align: center;
+  text-align: center;
 
 }
 
-
 body {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: url(https://wallpapercave.com/wp/wp9116447.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(https://wallpapercave.com/wp/wp9116447.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   }
 
 header  {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #0b4157;
+  background-color: #75868D;
   margin-left: 0px;
   margin-right: 0px;
   justify-content: space-between;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
 }
 
 .homelogo {
@@ -90,9 +85,9 @@ header  {
   }
   
   .topnav a:hover {
-    background-color: #477c92;
+    background-color: #5D6A6F;
     color: white;
-    border-radius: 5%;
+    border-radius: 15%;
   }
   
   .topnav a.active {
@@ -186,10 +181,28 @@ footer, h3 {
 }
 
 #midCards {
-margin-bottom: 150px;
+  margin-bottom: 120px;
+  background-color: #75868D;
 
 }
 
 #bottomCards {
-margin-bottom: 50px;
+  margin-bottom: 50px;
 }
+
+.background  {
+  background-color: #75868D;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1%;
+}
+
+.background1 {
+  background-color: #5D6A6F;
+  margin-top: 20px;
+}
+
+#apollocrew {
+  margin-top: 20px;
+}
+

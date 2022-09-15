@@ -5,46 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISS Tracker</title>
-<link rel="stylesheet" href="./reset.css"> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-<link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="./reset.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-<header>
-  <div class="homelogo">
-    <a href="https://spotthestation.nasa.gov/" class="active" target="_blank">ISS Tracker</a>
-  </div>
-  <div class="topnav" id="myTopnav">
-    <a href="https://www.nasa.gov/mission_pages/station/main/index.html" target="_blank">News</a>
-    <a href="#jumbotron">ISS Location</a>
-    <a href="#midCards">Fun Facts</a>
-    <a href="#midCards">Photos</a>
-    <a href="#bottomCards">About</a>
-    <a href="#bottomCards">Contact</a>
-    <a href="#signup" id="myBtn">Signup</a>
-    </a>
-  </div>
-</header>
 
-<!-- Trigger/Open The Modal -->
-<!-- <a href id="myBtn" will Open the Modal -->
+  <header>
+    <!-- Two "containers" - 1 x for the Home page link and 1 x for the rest of the TopNav menu items - to be able show the home page link left and the rest flex-right -->
+    <div class="homelogo">
+      <a href="https://spotthestation.nasa.gov/" class="active" target="_blank">ISS Tracker</a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="https://www.nasa.gov/mission_pages/station/main/index.html" target="_blank">News</a>
+      <a href="#jumbotron">ISS Location</a>
+      <a href="#midCards">Fun Facts</a>
+      <a href="#midCards">Photos</a>
+      <a href="#bottomCards">About</a>
+      <a href="#bottomCards">Contact</a>
+      <!-- Click on "Signup" on the TopNav link will Trigger/Open The Modal -  <a href id="myBtn" will Open the Modal -->
+      <a href="#signup" id="myBtn">Signup</a>
+      </a>
+    </div>
+  
+  </header>
+    
+    <div id="myModal" class="modal"> <!-- The Modal -->
+    
+      <div class="modal-content"> <!-- Modal content -->
+        <span class="close">&times;</span>
+        <p>Signup to receive regular Fun Facts..!</p>
+      </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+    </div>
 
-<!-- Modal content -->
-<div class="modal-content">
-  <span class="close">&times;</span>
-  <p>Signup to receive regular Fun Facts..!</p>
-</div>
-
-</div>
 <div class = "bg"></div>
-
 <Section>
 <div class="heropic">
+
   <img src="./ISS-hero-Image-sized with Logo.png"></a>
+
 </div>
 </Section>
 
@@ -54,11 +55,10 @@
 
 </div>
 
-</body>
-</html>
-<div class="row" id="midCards">
-  <div class="card col-6 bg-dark">
-    <div class="card-header justify-content-evenly text-white">
+
+<div class="row background" id="midCards">
+  <div class="card col-6 background">
+    <div class="card-header justify-content-evenly text-white background1">
       Facts About the ISS!
     </div>
     <div class="card-body">
@@ -66,8 +66,8 @@
       <a href="#" class="btn btn-primary">Fact Generator</a>
     </div>
   </div>
-  <div class="card col-6 bg-dark">
-    <div class="card-header text-white">
+  <div class="card col-6 background">
+    <div class="card-header text-white background1">
       Featured
     </div>
     <div class="card-body">
@@ -76,18 +76,18 @@
     </div>
   </div>
 </div>
-<div class="row" id="bottomCards">
-  <div class="card col-6 bg-dark">
-    <div class="card-header justify-content-evenly text-white">
+<div class="row background" id="bottomCards">
+  <div class="card col-6 background">
+    <div class="card-header justify-content-evenly text-white background1">
       About Us
     </div>
-    <img src = "220px-Apollo_11_Crew.jpg">
+    <img src = "./GucciGang3 Team Pic.png" id="apollocrew">
     <div class="card-body">
       <h5 class="card-title text-white">We are Austin Moore, Johan Botes, and Fabian Gutierrez. We're space enthusiasts who want to share our excitement for the marvel that is the ISS. We do this by providing its current location and a way to share your awesome ISS photos for everyone to enjoy.  </h5>
     </div>
   </div>
-  <div class="card col-6 bg-dark">
-    <div class="card-header text-white">
+  <div class="card col-6 background">
+    <div class="card-header text-white background1">
       Contact Us
     </div>
     <div class="card-body">
@@ -102,7 +102,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
 
-
+</body>
+</html>
 
 
 
