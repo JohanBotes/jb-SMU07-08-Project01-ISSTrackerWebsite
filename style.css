@@ -199,3 +199,13 @@ margin-bottom: 50px;
     height:50%;
     width:auto;
 }
+li{
+  list-style-type: none;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+ul{
+  flex-wrap: wrap;
+  justify-content: center;
+}

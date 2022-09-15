@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISS Tracker</title>
-<link rel="stylesheet" href="./reset.css"> 
+<!-- <link rel="stylesheet" href="./reset.css">  -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <link rel="stylesheet" href="./style.css">
 
@@ -52,7 +52,14 @@
 <div class="jumbotron" id="jumbotron">
 
   <h1 class="display-4">ISS Tracking Data</h1>
-
+  <ul class="justify-content-center">
+    <li id=latitude></li>
+    <li id="longitude"></li>
+    <li id="altitude"></li>
+    <li id="velocity"></li>
+    <li id="visibility"></li>
+  </ul>
+  <a class="btn btn-primary" id="ISSSearchButton">Track ISS</a>
 </div>
 
 </body>
@@ -63,17 +70,17 @@
       Facts About the ISS!
     </div>
     <div class="card-body">
-      <h5 class="card-title text-white">ISS Facts from the array</h5>
-      <a href="#" class="btn btn-primary">Fact Generator</a>
+      <h5 class="card-title text-white"id = "factGenerator"></h5>
+      <a class="btn btn-primary" id="factsButton">Fact Generator</a>
     </div>
   </div>
-  <div class="card col-6 bg-dark">
+  <div class="card col-6 bg-secondary">
     <div class="card-header text-white">
       Featured
     </div>
     <div class="card-body">
       <h5 class="card-text text-white">Your amazing ISS photos will go here</h5>
-      <a href="#" class="btn btn-primary">Add your own photos</a>
+      <a href="#" class="btn btn-primary" >Add your own photos</a>
     </div>
   </div>
 </div>
