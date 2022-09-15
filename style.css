@@ -9,13 +9,12 @@
 
 .display-4 {
   text-align: center;
-
 }
 
-<<<<<<< HEAD
-=======
+img {
+  width: 100%;
+}
 /* Austin included code in the body section to create a full screen background*/
->>>>>>> 2e4111f077e60f360470be77064f0618c6680492
 body {
   margin-left: 10px;
   margin-right: 10px;
@@ -99,11 +98,11 @@ header  {
     color: white;
   }
 
-  img   {
+  .guccigang3   {
     width: 100%;
-    height: 50%;
+    height: auto;
     text-align: center;
- 
+    margin-bottom: 20px;
   }
 
   .comments, h1, h2, p {
@@ -182,52 +181,68 @@ footer, h3 {
 }
 
 .comment  {
-  background-color: #aaaaaa;
+  background-color: #75868d;
 }
 
 #midCards {
   margin-bottom: 120px;
   background-color: #75868D;
-
 }
 
 #bottomCards {
-<<<<<<< HEAD
-  margin-bottom: 50px;
-}
-
-.background  {
-  background-color: #75868D;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 1%;
-}
-
-.background1 {
-  background-color: #5D6A6F;
-  margin-top: 20px;
-}
-
-#apollocrew {
-  margin-top: 20px;
-}
-
-=======
-margin-bottom: 50px;
+margin-left: 2px;
+margin-right: 2px;
+background-color: #75868D;
+height: 200px;
+border-radius: 2px;
 }
 
 .officePic {
-    height:50%;
-    width:auto;
+    height: 40%;
+    width: auto;
+    margin-bottom: 15px;
 }
+
 li{
   list-style-type: none;
   font-weight: bold;
   font-size: large;
   text-align: center;
 }
+
 ul{
   flex-wrap: wrap;
   justify-content: center;
 }
->>>>>>> 2e4111f077e60f360470be77064f0618c6680492
+
+.background {
+  background-color: #75868D;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.background1  {
+  background-color: #485256;
+  margin-top: 10px;
+}
+
+.cardbody {
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 12px;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.btn  {
+  Margin-top: 10px;
+}
+
+.card{
+  height: auto;
+  width: auto;
+}
