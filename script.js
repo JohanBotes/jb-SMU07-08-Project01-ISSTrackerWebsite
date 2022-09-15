@@ -78,7 +78,7 @@ showFacts.textContent = facts[Num]
 	
 
 
-     https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/
+     //https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/
    // https://wheretheiss.at/w/developer
 
 
