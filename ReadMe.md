@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="add link to webpage">
-    <img src= "./ISSWebpage.png" alt="Logo" width="160" height="120">
+    <img src= "./AssetsFolder/ISSScreenshot.png" alt="Logo" width="160" height="120">
   </a>
 
   <h3 align="center">ISS Tracking WebPage</h3>
