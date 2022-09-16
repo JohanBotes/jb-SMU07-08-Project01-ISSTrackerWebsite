@@ -12,10 +12,7 @@
 
 }
 
-<<<<<<< HEAD
-=======
 /* Austin included code in the body section to create a full screen background*/
->>>>>>> 2e4111f077e60f360470be77064f0618c6680492
 body {
   margin-left: 10px;
   margin-right: 10px;
@@ -192,7 +189,6 @@ footer, h3 {
 }
 
 #bottomCards {
-<<<<<<< HEAD
   margin-bottom: 50px;
 }
 
@@ -212,10 +208,6 @@ footer, h3 {
   margin-top: 20px;
 }
 
-=======
-margin-bottom: 50px;
-}
-
 .officePic {
     height:50%;
     width:auto;
@@ -230,4 +222,3 @@ ul{
   flex-wrap: wrap;
   justify-content: center;
 }
->>>>>>> 2e4111f077e60f360470be77064f0618c6680492

@@ -47,25 +47,8 @@ function getGeoLocation(lat, long) {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let facts = ["It flies around the world every 90 minutes, travelling at 5 miles per second",
-	"In the space of just 24 hours, the space station makes 16 orbits of Earth, travelling through 16 sunrises and sunsets",
+let facts = ["It flies around the world every 90 minutes, traveling at 5 miles per second",
+	"In the space of just 24 hours, the space station makes 16 orbits of Earth, traveling through 16 sunrises and sunsets",
 	"It's 357ft long from end to end - that's about the same as a football pitch",
 	"After the moon, the ISS is the second brightest object in our night sky - you don't even need a telescope to see it zoom over your house",
 	"There are two bathrooms on board! There's also one gym, six sleeping quarters and a 360 degree bay window",
