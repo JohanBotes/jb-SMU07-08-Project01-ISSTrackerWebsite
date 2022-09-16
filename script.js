@@ -10,14 +10,15 @@ function getISSData() {
 	})
 		//.then(data => console.log(data))
 		.then(function (ISSdata) {
+			console.log(ISSdata)
 			let latitude = document.getElementById("latitude")
 			latitude.textContent="latitude: " + (ISSdata.latitude)
 			let longitude = document.getElementById("longitude")
 			longitude.textContent="longitude: " + (ISSdata.longitude)
 			let altitude = document.getElementById("altitude")
-			altitude.textContent="altitude: " + (ISSdata.altitude)
+			altitude.textContent="altitude: " + (ISSdata.altitude) + " km"
 			let velocity = document.getElementById("velocity")
-			velocity.textContent="velocity: " + (ISSdata.velocity)
+			velocity.textContent="velocity: " + (ISSdata.velocity) + " km/h"
 			// console.log(ISSdata.visibility);
 			let visibility = document.getElementById("visibility")
 			visibility.textContent="visibility: " + (ISSdata.visibility)
@@ -41,16 +42,57 @@ function getGeoLocation(lat, long) {
 	};
 	fetch(`https://forward-reverse-geocoding.p.rapidapi.com/v1/reverse?lat=${lat}&lon=${long}&accept-language=en&polygon_threshold=0.0`, options)
 		.then(response => response.json())
-		.then(response => console.log(response))
+		.then(response => {
+			console.log(response)
+			console.log(response.address.city)
+			console.log(response.address.country)
+			let country = document.getElementById("country")
+			country.textContent="country: " + (response.address.country)
+			let city = document.getElementById("city")
+			city.textContent="city: " + (response.address.city)
+		})
+			
 		.catch(err => console.error(err));
 		
 };
 
+let images = [
+	{img:"./AssetsFolder/360Window.jpeg",description:"A 360 view from the ISS"},
+	{img:"./AssetsFolder/firstSegmentLaunch.png",description:"gjdsnognrs"},
+	{img:"./AssetsFolder/ISS2.jpeg"},
+	{img:"./AssetsFolder/ISS3.jpeg"},
+	{img:"./AssetsFolder/ISS4.jpg"},
+	{img:"./AssetsFolder/ISS6.jpg"},
+	{img:"./AssetsFolder/ISS9.jpg"},
+	{img:"./AssetsFolder/IssBeingBuilt.jpg"},
+	{img:"./AssetsFolder/ISSBlueprints.jpg"},
+	{img:"./AssetsFolder/ISScomponents.jpg"},
+	{img:"./AssetsFolder/repairingRoboticArm.jpg"},
+]
+let imageEl = document.getElementById("carousel");
+let imageDescEl = document.getElementById("carouselDescription")
+let container = document.querySelector(".carouselContainer");
+let currentImageIndex =5;
+
+renderImage();
+function renderImage(){
+    imageEl.src = images[currentImageIndex].img;
+    imageDescEl.textContent = images[currentImageIndex].description;
+}
 
 
+let carouselButton = document.getElementById("carouselButton")
+carouselButton.addEventListener("click", carouselGallery)
 
-
-
+function carouselGallery(){
+	if (currentImageIndex < images.length-1){
+	currentImageIndex++;
+	}
+else{
+currentImageIndex = 0;
+}
+renderImage()
+}
 
 
 
