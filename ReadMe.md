@@ -78,8 +78,8 @@ MIT
 Austin Moore - [f]
 (LinkedIn) - [ww]
 
-Johan Botes - [fabiangutierrez580@gmail.com]
-(LinkedIn) - [ww]
+Johan Botes - [johan.botes@udexx.com]
+(LinkedIn) - [www.linkedin.com/in/johan-botes-udexxceo]
 
 Fabian Gutierrez - [fabiangutierrez580@gmail.com]
 (LinkedIn) - [www.linkedin.com/in/fabian-gutierrez-016523248]
