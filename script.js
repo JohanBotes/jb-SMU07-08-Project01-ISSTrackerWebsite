@@ -94,6 +94,9 @@ function renderImage(){
     imageDescEl.textContent = images[currentImageIndex].description;
 }
 
+let facts = ["It flies around the world every 90 minutes, traveling at 5 miles per second",
+	"In the space of just 24 hours, the space station makes 16 orbits of Earth, traveling through 16 sunrises and sunsets",
+=======
 
 let carouselButton = document.getElementById("carouselButton")
 carouselButton.addEventListener("click", carouselGallery)

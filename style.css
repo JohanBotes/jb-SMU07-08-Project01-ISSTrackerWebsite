@@ -14,7 +14,7 @@
 img {
   width: 100%;
 }
-/* Austin included code in the body section to create a full screen background*/
+
 body {
   margin-left: 10px;
   margin-right: 10px;
@@ -190,11 +190,12 @@ footer, h3 {
 }
 
 #bottomCards {
-margin-left: 2px;
-margin-right: 2px;
-background-color: #75868D;
-height: 200px;
-border-radius: 2px;
+  margin-bottom: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: #75868D;
+  height: 200px;
+  border-radius: 2px;
 }
 
 .officePic {
@@ -228,6 +229,12 @@ ul{
   margin-top: 10px;
 }
 
+
+.officePic {
+    height:50%;
+    width:auto;
+  }
+   
 .cardbody {
   padding-left: 0px;
   padding-right: 0px;
@@ -254,3 +261,4 @@ a:visited {
   font-weight: bold;
   font-size: 13px;
 }
+

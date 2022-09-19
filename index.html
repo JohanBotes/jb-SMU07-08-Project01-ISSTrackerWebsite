@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISS Tracker</title>
+    <!-- <link rel="stylesheet" href="./reset.css">  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -12,6 +13,7 @@
 <body>
 
   <header>
+  
     <!-- Two "containers" - 1 x for the Home page link and 1 x for the rest of the TopNav menu items - to be able show the home page link left and the rest flex-right -->
     <div class="homelogo">
       <a href="https://spotthestation.nasa.gov/" class="active" target="_blank">ISS Tracker</a>
@@ -53,8 +55,6 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" id="saveButton">Save changes</button>
         </div>
-      </div>
-    </div>
 
 <!--Austin added a class for background to be changed-->
 </div>
@@ -102,6 +102,7 @@
 
   <div class="card col-6 background">
     <div class="card-header text-white background1">
+
       Featured
     </div>
     <div class="card-body">
@@ -118,13 +119,14 @@
   </div>
 
 </div>
-<div class="row" id="bottomCards">
+ <!--Austin added two cards to the bottom for the "about" and "contact"-->
+<div class="row background" id="bottomCards">
   <div class="card col-6 background">
     <div class="card-header justify-content-evenly text-white background1">
       About Us
-  </div>
-  <!--Austin added two cards to the bottom for the "about" and "contact"-->
-    
+    </div>
+    <img src = "./GucciGang3 Team Pic.png" id="apollocrew">
+
     <div class="card-body">
       <img class="guccigang3" src="./GucciGang3 Team Pic.png">
       <h5 class="card-title text-white">We are Austin Moore, Johan Botes, and Fabian Gutierrez. We're space enthusiasts who want to share our excitement for the marvel that is the ISS. We do this by providing its current location and a way to share your awesome ISS photos for everyone to enjoy.  </h5>
@@ -137,12 +139,17 @@
       <p><a href="#top">Back to the top</a></p>
     </div>
   </div>
-  <div class="card col-6 background">
-    <div class="card-header text-white background1">
+  <div class="card col-6 bg-secondary">
+    <div class="card-header text-white">
       Contact Us
     </div>
     <div class="card-body">
       <img class= officePic src="./GucciGang3HQ.jpg" width="300" height="auto">
+      <h6 class="card-text text-white">GucciGang3 Headquarters</h6>
+      <h5 class="card-text text-white">Email:</h5>
+      <h5 class="card-text text-white">GucciGang3@gmail.com</h5>
+      <h5 class="card-text text-white">Mailing Address:</h5>
+      <h5 class="card-text text-white">P.O. Box 20, Las Cruces, NM 88004</h5>
       <h6 class="card-text text-white">GucciGang3 Headquarters - email: <a href="guccigang3@udexx.com"></a>GucciGang3@gmail.com | Office: +1 (972) 687-9078</h6>
       <h6 class="card-text text-white">Mailing Address:<br><br>P.O. Box 20<br>Las Cruces<br>NM 88004<br>United States of America</h6>
       <br>
