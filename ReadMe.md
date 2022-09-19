@@ -75,8 +75,8 @@ MIT
 <!-- CONTACT -->
 ## Contact
 
-Austin Moore - [f]
-(LinkedIn) - [ww]
+Austin Moore - [austin1moore@gmail.com]
+(LinkedIn) - [https://www.linkedin.com/in/austin-moore-14134a1b/]
 
 Johan Botes - [fabiangutierrez580@gmail.com]
 (LinkedIn) - [ww]
