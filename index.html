@@ -24,7 +24,7 @@
       <a href="#bottomCards">About</a>
       <a href="#bottomCards">Contact</a>
       <!-- Click on "Signup" on the TopNav link will Trigger/Open The Modal -  <a href id="myBtn" will Open the Modal -->
-      <a href="#signup" id="myBtn">Signup</a>
+      <a href="#signup" id="myBtn">Local Spot Time</a>
       </a>
     </div>
   
@@ -35,7 +35,24 @@
       <!-- Modal content -->
       <div class="modal-content"> 
         <span class="close">&times;</span>
-        <p>Signup to receive regular Fun Facts..!</p>
+        <p>Write down and save the next couple times you'll be able to spot the ISS!</p>
+        <form>
+          <div class="form-group">
+            <label for="Date" class="col-form-label">Date:</label>
+            <input type="text" class="form-control" id="Date">
+          </div>
+          <div class="form-group">
+            <label for="Location" class="col-form-label">Location:</label>
+            <input type="text" class="form-control" id="location">
+          </div>
+          <div class="form-group">
+            <label for="howLong" class="col-form-label">How long:</label>
+            <input type="text" class="form-control" id="howLong">
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="saveButton">Save changes</button>
+        </div>
       </div>
     </div>
 
@@ -112,6 +129,11 @@
       <img class="guccigang3" src="./GucciGang3 Team Pic.png">
       <h5 class="card-title text-white">We are Austin Moore, Johan Botes, and Fabian Gutierrez. We're space enthusiasts who want to share our excitement for the marvel that is the ISS. We do this by providing its current location and a way to share your awesome ISS photos for everyone to enjoy.  </h5>
       <br>
+      <br>
+      <br>
+      <p class="text-white">“That's one small step for GucciGang3, one giant leap for the SMU bootcamp.”
+      
+        - Neil Armstrong(probably).</p>
       <p><a href="#top">Back to the top</a></p>
     </div>
   </div>

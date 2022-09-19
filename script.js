@@ -1,5 +1,7 @@
 let ISSSearchbutton = document.getElementById("ISSSearch")
 ISSSearchButton.addEventListener("click", getISSData)
+
+//this function calls the first API to get lat,long info as well as velocity and altitude
 function getISSData() {
 	let ISSdataLat;
 	let ISSdataLong;
@@ -27,7 +29,7 @@ function getISSData() {
 			// console.log(ISSdataLat)
 			getGeoLocation(ISSdataLat,ISSdataLong)
 		});
-}
+}//this API takes the lat-long data and returns an actual city
 function getGeoLocation(lat, long) {
 	console.log(lat,long)
 	// lat= 32.77
@@ -41,8 +43,13 @@ function getGeoLocation(lat, long) {
 		}
 	};
 	fetch(`https://forward-reverse-geocoding.p.rapidapi.com/v1/reverse?lat=${lat}&lon=${long}&accept-language=en&polygon_threshold=0.0`, options)
-		.then(response => response.json())
+		.then(response =>{ 
+			console.log(response)
+			response.json()
+		
+		})
 		.then(response => {
+			if(response){
 			console.log(response)
 			console.log(response.address.city)
 			console.log(response.address.country)
@@ -50,29 +57,36 @@ function getGeoLocation(lat, long) {
 			country.textContent="country: " + (response.address.country)
 			let city = document.getElementById("city")
 			city.textContent="city: " + (response.address.city)
+			}else{
+				let country = document.getElementById("country")
+			country.textContent="over the ocean"
+			let city = document.getElementById("city")
+			city.textContent="or Atlantis"
+			}
 		})
 			
 		.catch(err => console.error(err));
 		
 };
 
+//images for the carousel as well as the function
 let images = [
 	{img:"./AssetsFolder/360Window.jpeg",description:"A 360 view from the ISS"},
-	{img:"./AssetsFolder/firstSegmentLaunch.png",description:"gjdsnognrs"},
-	{img:"./AssetsFolder/ISS2.jpeg"},
-	{img:"./AssetsFolder/ISS3.jpeg"},
-	{img:"./AssetsFolder/ISS4.jpg"},
-	{img:"./AssetsFolder/ISS6.jpg"},
-	{img:"./AssetsFolder/ISS9.jpg"},
-	{img:"./AssetsFolder/IssBeingBuilt.jpg"},
-	{img:"./AssetsFolder/ISSBlueprints.jpg"},
-	{img:"./AssetsFolder/ISScomponents.jpg"},
-	{img:"./AssetsFolder/repairingRoboticArm.jpg"},
+	{img:"./AssetsFolder/firstSegmentLaunch.png",description:"ISS first segment being launched into space"},
+	{img:"./AssetsFolder/ISS2.jpeg",description:"ISS timelapse photo from Earth"},
+	{img:"./AssetsFolder/ISS3.jpeg",description:"Another timelapse photo from Earth"},
+	{img:"./AssetsFolder/ISS4.jpg", description:"Astronaut chilling in space"},
+	{img:"./AssetsFolder/ISS6.jpg", description:"Image of ISS taken from space with Earth in the background"},
+	{img:"./AssetsFolder/ISS9.jpg", description:"2 astronauts having a good time in the hub"},
+	{img:"./AssetsFolder/IssBeingBuilt.jpg", description:"the second segment of the ISS under construction"},
+	{img:"./AssetsFolder/ISSBlueprints.jpg", description:"blueprints of the ISS"},
+	{img:"./AssetsFolder/ISScomponents.jpg",description:"floorplan of the ISS"},
+	{img:"./AssetsFolder/repairingRoboticArm.jpg",description:"2 astronauts doing repairs on the outside of the ISS"},
 ]
 let imageEl = document.getElementById("carousel");
 let imageDescEl = document.getElementById("carouselDescription")
 let container = document.querySelector(".carouselContainer");
-let currentImageIndex =5;
+let currentImageIndex =0;
 
 renderImage();
 function renderImage(){
@@ -83,7 +97,7 @@ function renderImage(){
 
 let carouselButton = document.getElementById("carouselButton")
 carouselButton.addEventListener("click", carouselGallery)
-
+//function that when clicked the image gallery scrolls through the images
 function carouselGallery(){
 	if (currentImageIndex < images.length-1){
 	currentImageIndex++;
@@ -93,19 +107,7 @@ currentImageIndex = 0;
 }
 renderImage()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+//fun facts array af well as the function that chooses random fact to display
 let facts = ["It flies around the world every 90 minutes, travelling at 5 miles per second",
 	"In the space of just 24 hours, the space station makes 16 orbits of Earth, travelling through 16 sunrises and sunsets",
 	"It's 357ft long from end to end - that's about the same as a football pitch",
@@ -135,7 +137,7 @@ function factsArray() {
 
 
 
-https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/
+//https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/
 // https://wheretheiss.at/w/developer
 
 
@@ -164,3 +166,27 @@ window.onclick = function (event) {
 		modal.style.display = "none";
 	}
 }
+
+
+//function to save date to local storage 
+if(localStorage.getItem("date")&&localStorage.getItem("location")&&localStorage.getItem("howLong")){
+	console.log("hello")
+	console.log(localStorage.getItem("date"))
+	let date = document.getElementById("Date")
+	let location = document.getElementById("location")
+	let howLong = document.getElementById("howLong")
+	date.value = localStorage.getItem("date")
+	location.value = localStorage.getItem("location")
+	howLong.value = localStorage.getItem("howLong")
+}
+function dateSaver(){
+	let date = document.getElementById("Date").value
+	let location = document.getElementById("location").value
+	let howLong = document.getElementById("howLong").value
+	localStorage.setItem("date",date)
+	localStorage.setItem("location",location)
+	localStorage.setItem("howLong",howLong)
+
+}
+let saveButton = document.getElementById("saveButton")
+saveButton.addEventListener("click", dateSaver)
