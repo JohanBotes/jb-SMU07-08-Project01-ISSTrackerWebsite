@@ -4,7 +4,7 @@
 
 # Project Description
 
-- Most poeple shoot for the  stars but we shot towards something better, The international Space Station, not literally of course(just clarifying for NASA). With this ISS location tracking app you will be able to track HALF of all the space stations on this side of the milky way. 
+- Most people shoot for the stars, but we shot towards something better, The international Space Station, not literally of course (just clarifying for NASA). With this ISS location tracking app you will be able to trackthe space station. 
 - At any time of day you can click on the track ISS button and find its location, or you can do plenty of other things such as viewing photos from and of the station, reading amazing facts about the station etc etc.
 
 ![ISS Tracker - Homepage](https://github.com/JohanBotes/jb-SMU07-08-Project01-ISSTrackerWebsite/blob/main/IISTrackerHomepage.png)
