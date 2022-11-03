@@ -1,30 +1,13 @@
-<a name="readme-top"></a>
+# Project Title
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://ausmo.github.io/ISS-Tracker/">
-    <img src= "./AssetsFolder/ISSScreenshot.png" alt="Logo" width="160" height="120">
-  </a>
+## [International Space Station Tracking Website](https://ausmo.github.io/ISS-Tracker/)
 
-  <h3 align="center">ISS Tracking WebPage</h3>
+## Project Description
 
-  <p align="center">
-    With this ISS location tracking app you will be able to track HALF of all the space stations on this side of the milky way. 
-    <br />
+- Most poeple shoot for the  stars but we shot towards something better, The international Space Station, not literally of course(just clarifying for NASA). With this ISS location tracking app you will be able to track HALF of all the space stations on this side of the milky way. 
+- At any time of day you can click on the track ISS button and find its location, or you can do plenty of other things such as viewing photos from and of the station, reading amazing facts about the station etc etc.
 
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-   Most poeple shoot for the  stars but we shot towards something better, The international Space Station, not literally of course(just clarifying for NASA). With this ISS location tracking app you will be able to track HALF of all the space stations on this side of the milky way. At any time of day you can click on the track ISS button and find its location, or you can do plenty of other things such as viewing photos from and of the station, reading amazing facts about the station etc etc.
-
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+![ISS Tracker - Homepage](
 
 ### Built With
 
