@@ -31,7 +31,7 @@ All things ISS, whether that be looking up its location, viewing photos, or lear
 
 Our webpage was built by our wonderful team consisting of Austin Moore, Johan, and Fabian
 
-![The ISS Tracker Team](
+![The ISS Tracker Team](https://github.com/JohanBotes/jb-SMU07-08-Project01-ISSTrackerWebsite/blob/main/ISSTrackerTeam.png)
 
 ## License
 
@@ -39,9 +39,6 @@ MIT
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- CONTACT -->
 ## Contact
 
 Austin Moore - [austin1moore@gmail.com]
@@ -52,7 +49,6 @@ Johan Botes - [johan.botes@udexx.com]
 
 Fabian Gutierrez - [fabiangutierrez580@gmail.com]
 (LinkedIn) - [www.linkedin.com/in/fabian-gutierrez-016523248]
-
 
 Project Link: [https://ausmo.github.io/ISS-Tracker/]
 
